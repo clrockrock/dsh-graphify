@@ -1,0 +1,71 @@
+{
+  "name": "dsh-graphify",
+  "version": "0.1.0",
+  "description": "Codebase knowledge graphs for DeepSeek Harness: build, query, and browse a project's graph through seven graphify_* Agent tools, a /graphify command, and a Graphify page in the Web UI.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "graphify",
+    "knowledge-graph",
+    "code-intelligence",
+    "tree-sitter"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets",
+    "README.md",
+    "README.zh.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.1-rc.2"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check": "node --check index.js && node --check client.js && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clrockrock/dsh-graphify.git"
+  },
+  "homepage": "https://github.com/clrockrock/dsh-graphify#readme",
+  "bugs": {
+    "url": "https://github.com/clrockrock/dsh-graphify/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.1-rc.2": "compatible"
+      }
+    }
+  }
+}

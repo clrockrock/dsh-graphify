@@ -1,0 +1,62 @@
+{
+  "communities": {
+    "0": [
+      "src_auth",
+      "src_auth_verify",
+      "src_server",
+      "src_server_start"
+    ],
+    "1": [
+      "src_db",
+      "src_db_db",
+      "src_pool",
+      "src_pool_pool"
+    ]
+  },
+  "cohesion": {
+    "0": 0.8333333333333334,
+    "1": 0.6666666666666666
+  },
+  "gods": [
+    {
+      "id": "src_auth_verify",
+      "label": "verify()",
+      "degree": 3
+    },
+    {
+      "id": "src_server_start",
+      "label": "start()",
+      "degree": 2
+    },
+    {
+      "id": "src_db_db",
+      "label": "db",
+      "degree": 2
+    },
+    {
+      "id": "src_pool_pool",
+      "label": "pool",
+      "degree": 2
+    }
+  ],
+  "surprises": [
+    {
+      "source": "start()",
+      "target": "verify()",
+      "source_files": [
+        "src/server.js",
+        "src/auth.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "questions": [
+    {
+      "type": "no_signal",
+      "question": null,
+      "why": "Not enough signal to generate questions. This usually means the corpus has no AMBIGUOUS edges, no bridge nodes, no INFERRED relationships, and all communities are tightly cohesive. Add more files or run with --mode deep to extract richer edges."
+    }
+  ]
+}

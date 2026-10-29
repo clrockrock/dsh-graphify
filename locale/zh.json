@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Graphify 知识图谱",
+    "description": "构建、查询并浏览代码库知识图谱：提供 graphify_* Agent 工具、/graphify 命令，以及包含图谱统计、上帝节点、社区、报告与交互图的 Graphify 页面。"
+  }
+}

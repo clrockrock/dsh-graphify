@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Graphify">
+  <defs>
+    <linearGradient id="graphify-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1b2a"/>
+      <stop offset="1" stop-color="#102a2b"/>
+    </linearGradient>
+    <linearGradient id="graphify-edge" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#2f81f7"/>
+      <stop offset="1" stop-color="#3fb950"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#graphify-bg)"/>
+  <g stroke="url(#graphify-edge)" stroke-width="2.4" stroke-linecap="round" opacity="0.85" fill="none">
+    <path d="M17 20.5 32 14"/>
+    <path d="M17 20.5 26 33.5"/>
+    <path d="M32 14 45.5 21"/>
+    <path d="M26 33.5 45.5 21"/>
+    <path d="M26 33.5 20 49"/>
+    <path d="M26 33.5 44 45.5"/>
+    <path d="M20 49 44 45.5"/>
+  </g>
+  <g fill="#58a6ff">
+    <circle cx="17" cy="20.5" r="4.2"/>
+    <circle cx="32" cy="14" r="3.4"/>
+    <circle cx="45.5" cy="21" r="3.4"/>
+  </g>
+  <g fill="#3fb950">
+    <circle cx="26" cy="33.5" r="5.4"/>
+    <circle cx="20" cy="49" r="3.2"/>
+    <circle cx="44" cy="45.5" r="3.8"/>
+  </g>
+</svg>

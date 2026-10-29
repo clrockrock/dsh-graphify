@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Graphify",
+    "description": "Build, query, and browse a codebase knowledge graph. Adds graphify_* Agent tools, a /graphify command, and a Graphify page with graph stats, god nodes, communities, report, and the interactive graph."
+  }
+}

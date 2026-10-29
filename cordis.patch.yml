@@ -1,0 +1,16 @@
+# dsh-graphify bundle patch: one Host row that owns the Agent tools, the
+# /graphify command, and the /graphify HTTP API read by the Web page.
+#
+# Optional configuration (all fields have defaults, so the empty config is
+# enough). Edit this block in your profile patch layer to override:
+#
+#   command: graphify            # executable name or absolute path
+#   extraArgs: []                # e.g. [graphifyy] when command is uvx
+#   projectPath: ''              # default project; empty = the Session directory
+#   graphPath: ''                # explicit graph.json; empty = <project>/graphify-out/graph.json
+#   buildTimeoutMs: 1800000      # per build/update/export deadline
+#   queryTimeoutMs: 120000       # per query/path/explain deadline
+- insert:
+    - id: dsh-graphify
+      name: dsh-graphify
+      config: {}
