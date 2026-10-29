@@ -25,11 +25,13 @@ Code indexing (`code` and `update` modes) runs entirely on your machine with tre
 
 ## Install
 
-From the plugin market: open **Plugins → Discover**, search for `dsh-graphify`, and install it. From a terminal:
+From a terminal:
 
 ```sh
 dsh plugin --profile web add github:clrockrock/dsh-graphify
 ```
+
+Once this entry is listed in the plugin market you can also install it there: **Plugins → Discover**, search for `graphify`.
 
 Then restart `dsh web`. A prebuilt tarball is attached to every [release](https://github.com/clrockrock/dsh-graphify/releases) for installs that should skip the source checkout.
 

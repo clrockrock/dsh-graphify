@@ -25,11 +25,13 @@
 
 ## 安装
 
-插件市场：打开 **Plugins → Discover**，搜索 `dsh-graphify` 安装。或在终端：
+在终端：
 
 ```sh
 dsh plugin --profile web add github:clrockrock/dsh-graphify
 ```
+
+收录进插件市场后，也可以在 **Plugins → Discover** 搜索 `graphify` 安装。
 
 然后重启 `dsh web`。每个 [Release](https://github.com/clrockrock/dsh-graphify/releases) 都附带预构建 tarball，可跳过源码拉取直接安装。
 
